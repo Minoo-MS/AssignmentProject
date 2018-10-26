@@ -28,7 +28,6 @@ namespace AssignmentProject.Controllers
         [HttpGet]
         public IEnumerable<Product> Get()
         {
-            var t = _service.GetAll();
             return _service.GetAll();
         }
 

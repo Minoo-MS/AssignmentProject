@@ -60,8 +60,6 @@ namespace AssignmentProject.Core.Services
                     s.ColumnMappings.Add("Size", "Size");
                     s.ColumnMappings.Add("Color", "Color");
 
-                    //foreach (var column in csvFileData.Columns)
-                    //    s.ColumnMappings.Add(column.ToString(), column.ToString());
 
                     s.WriteToServer(csvFileData);
                 }

@@ -14,7 +14,6 @@ namespace AssignmentProject.Core.Services
 
         public static void SaveAs( IFormFile formFile, string filePath)
         {
-            //formFile.CopyTo(new FileStream(filePath, FileMode.Create));
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
                 formFile.CopyTo(stream);
